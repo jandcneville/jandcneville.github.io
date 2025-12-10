@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import NevilleLogo from "../assets/images/jc-logo.png";   // ← your logo import
 
 const navLinks = [
   { path: "/", label: "Home" },
@@ -35,14 +36,14 @@ const Header: React.FC = () => {
       {/* Main navigation bar */}
       <div className="bg-primary">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
-          {/* Logo + brand text */}
+
+          {/* Logo + Brand Text */}
           <Link to="/" className="flex items-center gap-4">
             <img
-              src="/jc-logo.png"
+              src={NevilleLogo}
               alt="J & C Neville Logo"
-              className="h-14 w-auto object-contain drop-shadow-sm"
+              className="h-16 w-17 object-contain drop-shadow-sm"
             />
-
             <div className="leading-tight text-primary-foreground">
               <span className="block font-bold text-xl">J &amp; C Neville</span>
               <span className="hidden sm:block text-xs text-primary-foreground/70">
@@ -51,7 +52,7 @@ const Header: React.FC = () => {
             </div>
           </Link>
 
-          {/* Desktop navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4">
             {navLinks.map((link) => (
               <Link
@@ -80,7 +81,7 @@ const Header: React.FC = () => {
             </Button>
           </nav>
 
-          {/* Mobile menu toggle */}
+          {/* Mobile Menu Toggle Button */}
           <button
             type="button"
             className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
@@ -90,7 +91,7 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile navigation panel */}
+        {/* Mobile Navigation Panel */}
         {isMenuOpen && (
           <nav className="md:hidden border-t border-primary-foreground/20 bg-primary/95 backdrop-blur">
             <div className="container mx-auto flex flex-col gap-1 px-4 py-3">

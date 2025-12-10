@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import NevilleLogo from "../assets/images/jc-logo.png"; // <- logo import
 
 const Footer = () => {
   return (
@@ -9,16 +10,21 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-accent text-accent-foreground font-bold text-xl px-2 py-1 rounded">
-                J&C
-              </div>
-              <div>
-                <span className="font-bold text-lg">NEVILLE</span>
-                <span className="block text-xs text-primary-foreground/70">Steel & Timber Merchants</span>
+              <img
+                src={NevilleLogo}
+                alt="J & C Neville Logo"
+                className="h-12 w-auto object-contain drop-shadow-sm"
+              />
+              <div className="leading-tight">
+                <span className="block font-bold text-lg">J &amp; C Neville</span>
+                <span className="block text-xs text-primary-foreground/70">
+                  Steel &amp; Timber Merchants
+                </span>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Your trusted local supplier of quality steel, timber, and roofing materials in Roscrea and surrounding areas.
+              Your trusted local supplier of quality steel, timber, and roofing
+              materials in Roscrea and surrounding areas.
             </p>
           </div>
 
@@ -27,22 +33,34 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4 text-accent">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link
+                  to="/"
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Products & Services
+                <Link
+                  to="/products"
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
+                  Products &amp; Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link
+                  to="/about"
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <Link
+                  to="/contact"
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -54,26 +72,39 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4 text-accent">Contact Us</h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:0862621275" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
+                <a
+                  href="tel:0862621275"
+                  className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors"
+                >
                   <Phone className="h-4 w-4 text-accent" />
                   086 262 1275
                 </a>
               </li>
               <li>
-                <a href="tel:050521741" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors">
+                <a
+                  href="tel:050521741"
+                  className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors"
+                >
                   <Phone className="h-4 w-4 text-accent" />
                   0505 21741
                 </a>
               </li>
               <li>
-                <a href="mailto:jandcnevilleroscrea@gmail.com" className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors text-sm">
+                <a
+                  href="mailto:jandcnevilleroscrea@gmail.com"
+                  className="flex items-center gap-2 text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                >
                   <Mail className="h-4 w-4 text-accent flex-shrink-0" />
                   jandcnevilleroscrea@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-primary-foreground/80">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
-                <span>Limerick Street, Roscrea,<br />Tipperary E53 VK64</span>
+                <span>
+                  Limerick Street, Roscrea,
+                  <br />
+                  Tipperary E53 VK64
+                </span>
               </li>
             </ul>
           </div>
@@ -104,7 +135,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60 text-sm">
-          <p>&copy; {new Date().getFullYear()} J&C Neville. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} J&amp;C Neville. All rights reserved.</p>
         </div>
       </div>
     </footer>

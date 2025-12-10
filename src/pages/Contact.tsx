@@ -4,21 +4,41 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// 🔹 Import the large logo
+import NevilleLogo from "@/assets/images/jc-logo.png";
+
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">
-        {/* Page Header */}
+        {/* Page Header WITH BIG LOGO */}
         <section className="bg-primary py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
-              Contact <span className="text-accent">Us</span>
-            </h1>
-            <p className="text-xl text-primary-foreground/80 max-w-2xl">
-              Get in touch for availability, pricing, or any questions. We're here to help.
-            </p>
+            <div className="grid items-center gap-10 md:grid-cols-2">
+              
+              {/* LEFT — TEXT */}
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+                  Contact <span className="text-accent">Us</span>
+                </h1>
+                <p className="text-xl text-primary-foreground/80 max-w-2xl">
+                  Get in touch for availability, pricing, or any questions.
+                  We're here to help.
+                </p>
+              </div>
+
+              {/* RIGHT — BIG LOGO */}
+              <div className="flex justify-center">
+                <img
+                  src={NevilleLogo}
+                  alt="J & C Neville Logo"
+                  className="w-64 md:w-80 lg:w-[350px] drop-shadow-2xl object-contain"
+                />
+              </div>
+
+            </div>
           </div>
         </section>
 
@@ -26,12 +46,13 @@ const Contact = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              
               {/* Contact Details */}
               <div className="space-y-6">
                 <Card className="bg-card border-border">
                   <CardHeader>
                     <CardTitle className="text-xl text-foreground flex items-center gap-2">
-                      <Phone className="h-5 w-5 text-accent" />
+                      <Phone className="h-5 w-5 text-foreground" />
                       Phone
                     </CardTitle>
                   </CardHeader>
@@ -56,7 +77,7 @@ const Contact = () => {
                 <Card className="bg-card border-border">
                   <CardHeader>
                     <CardTitle className="text-xl text-foreground flex items-center gap-2">
-                      <Mail className="h-5 w-5 text-accent" />
+                      <Mail className="h-5 w-5 text-foreground" />
                       Email
                     </CardTitle>
                   </CardHeader>
@@ -65,7 +86,9 @@ const Contact = () => {
                       href="mailto:jandcnevilleroscrea@gmail.com" 
                       className="flex items-center justify-between p-3 bg-muted rounded-lg hover:bg-muted/80 transition-colors"
                     >
-                      <span className="text-primary font-medium break-all">jandcnevilleroscrea@gmail.com</span>
+                      <span className="text-primary font-medium break-all">
+                        jandcnevilleroscrea@gmail.com
+                      </span>
                       <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0 ml-2" />
                     </a>
                   </CardContent>
@@ -74,18 +97,21 @@ const Contact = () => {
                 <Card className="bg-card border-border">
                   <CardHeader>
                     <CardTitle className="text-xl text-foreground flex items-center gap-2">
-                      <MapPin className="h-5 w-5 text-accent" />
+                      <MapPin className="h-5 w-5 text-foreground" />
                       Address
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="p-3 bg-muted rounded-lg">
                       <p className="text-foreground font-medium">J&C Neville</p>
-                      <p className="text-muted-foreground">Limerick Street</p>
-                      <p className="text-muted-foreground">Roscrea, Co. Tipperary</p>
+                      <p className="text-foreground font-medium">Limerick Street</p>
+                      <p className="text-foreground font-medium">Roscrea, Co. Tipperary</p>
                       <p className="text-primary font-medium mt-1">E53 VK64</p>
                     </div>
-                    <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button 
+                      asChild 
+                      className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
                       <a 
                         href="https://www.google.com/maps/search/?api=1&query=Limerick+Street+Roscrea+Tipperary+E53+VK64" 
                         target="_blank" 
@@ -101,7 +127,7 @@ const Contact = () => {
                 <Card className="bg-card border-border">
                   <CardHeader>
                     <CardTitle className="text-xl text-foreground flex items-center gap-2">
-                      <Clock className="h-5 w-5 text-accent" />
+                      <Clock className="h-5 w-5 text-foreground" />
                       Opening Hours
                     </CardTitle>
                   </CardHeader>
@@ -140,6 +166,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -153,26 +180,40 @@ const Contact = () => {
                   Need Materials Fast?
                 </h2>
                 <p className="text-accent-foreground/80">
-                  Give us a call and we'll check availability for you right away.
+                  Give us a call and we'll check availability right away.
                 </p>
               </div>
+
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild size="lg" variant="secondary" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="secondary" 
+                  className="bg-primary text-primary-foreground hover:bg-primary/90"
+                >
                   <a href="tel:0862621275">
                     <Phone className="mr-2 h-5 w-5" />
                     086 262 1275
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10">
+
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10"
+                >
                   <a href="tel:050521741">
                     <Phone className="mr-2 h-5 w-5" />
                     0505 21741
                   </a>
                 </Button>
               </div>
+
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />
