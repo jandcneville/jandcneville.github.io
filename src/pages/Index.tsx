@@ -172,19 +172,28 @@ const Index = () => {
                   Our experienced team will ensure your materials arrive safely at your site.
                 </p>
                 <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-2 text-foreground">
-                  <span className="h-2 w-2 bg-accent rounded-full" />
-                  Local delivery available
-                </li>
-                <li className="flex items-center gap-2 text-foreground">
-                  <span className="h-2 w-2 bg-accent rounded-full" />
-                  Flexible scheduling
-                </li>
-                <li className="flex items-center gap-2 text-foreground">
-                  <span className="h-2 w-2 bg-accent rounded-full" />
-                  Safe handling of all materials
-                </li>
+                  <li className="flex items-center gap-3 text-foreground">
+                    <span className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="h-2 w-2 bg-primary rounded-full" />
+                    </span>
+                    Local delivery available
+                  </li>
+
+                  <li className="flex items-center gap-3 text-foreground">
+                    <span className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="h-2 w-2 bg-primary rounded-full" />
+                    </span>
+                    Flexible scheduling
+                  </li>
+
+                  <li className="flex items-center gap-3 text-foreground">
+                    <span className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="h-2 w-2 bg-primary rounded-full" />
+                    </span>
+                    Safe handling of all materials
+                  </li>
                 </ul>
+
                 <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                   <Link to="/contact">
                     Contact Us for Delivery
