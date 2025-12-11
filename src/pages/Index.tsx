@@ -172,18 +172,18 @@ const Index = () => {
                   Our experienced team will ensure your materials arrive safely at your site.
                 </p>
                 <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2 text-foreground">
-                    <span className="h-2 w-2 bg-accent rounded-full" />
-                    Local delivery available
-                  </li>
-                  <li className="flex items-center gap-2 text-foreground">
-                    <span className="h-2 w-2 bg-accent rounded-full" />
-                    Flexible scheduling
-                  </li>
-                  <li className="flex items-center gap-2 text-foreground">
-                    <span className="h-2 w-2 bg-accent rounded-full" />
-                    Safe handling of all materials
-                  </li>
+                <li className="flex items-center gap-2 text-foreground">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  Local delivery available
+                </li>
+                <li className="flex items-center gap-2 text-foreground">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  Flexible scheduling
+                </li>
+                <li className="flex items-center gap-2 text-foreground">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  Safe handling of all materials
+                </li>
                 </ul>
                 <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                   <Link to="/contact">
