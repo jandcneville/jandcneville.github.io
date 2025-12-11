@@ -172,7 +172,7 @@ const Products = () => {
               {/* LEFT SIDE */}
               <div className="flex-1 order-2 lg:order-1">
 
-                <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
+                <div className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                   <Truck className="h-5 w-5" />
                   <span className="font-medium">Delivery Available</span>
                 </div>
