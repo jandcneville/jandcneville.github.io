@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <div className="border-b border-primary-foreground/20 bg-primary/95 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-4 py-2 text-xs sm:text-sm text-primary-foreground/90">
           <a
-            href="tel:0862621275"
+            href="tel:050521741"
             className="flex items-center gap-2 hover:text-accent transition-colors"
           >
             <Phone className="h-3 w-3" />
