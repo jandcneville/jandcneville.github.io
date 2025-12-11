@@ -112,7 +112,7 @@ const Header: React.FC = () => {
               ))}
 
               <a
-                href="tel:0862621275"
+                href="tel:050521741"
                 className="mt-2 flex items-center justify-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground hover:bg-accent/90 transition-colors"
               >
                 <Phone className="h-4 w-4" />
