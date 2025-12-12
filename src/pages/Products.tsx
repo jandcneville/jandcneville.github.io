@@ -174,7 +174,7 @@ const Products = () => {
 
                 <div className="text-3xl md:text-4xl font-bold text-foreground mb-4 flex items-center gap-2">
                   <Truck className="h-5 w-5 text-foreground" />
-                  <span className="font-medium text-foreground">Delivery Available</span>
+                  <span className="text-muted-foreground mb-6">Delivery Available</span>
                 </div>
 
 
