@@ -178,7 +178,7 @@ const Products = () => {
                 </div>
 
 
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-muted-foreground mb-4">
                   We Deliver to Your Site
                 </h2>
 
