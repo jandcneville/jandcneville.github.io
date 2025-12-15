@@ -186,7 +186,7 @@ const Products = () => {
                   We offer delivery to Roscrea and surrounding areas. Flexible, reliable, and careful transport of all materials.
                 </p>
 
-                <ul className="space-y-3 mb-6">
+                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center gap-3 text-foreground">
                     <span className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center">
                       <span className="h-2 w-2 bg-primary rounded-full" />
