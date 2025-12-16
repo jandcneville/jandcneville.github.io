@@ -189,11 +189,12 @@ const Products = () => {
               <div className="flex-1 order-2 lg:order-1">
                 {/* SMALL LABEL */}
                 <div className="flex items-center gap-2 mb-3">
-                  <Truck className="h-4 w-4 text-foreground" />
-                  <span className="text-sm font-medium text-foreground uppercase tracking-wide">
+                  <Truck className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-base font-semibold text-foreground">
                     Delivery Available
                   </span>
                 </div>
+
 
                 {/* MAIN HEADING */}
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
