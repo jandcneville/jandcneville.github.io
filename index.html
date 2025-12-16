@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GitHub Pages SPA restore (for BrowserRouter refresh) -->
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get("p");
+        if (p) {
+          window.history.replaceState(null, "", decodeURIComponent(p));
+        }
+      })();
+    </script>
+
     <!-- Site Title -->
     <title>J & C Neville • Steel & Timber Merchants</title>
 
@@ -40,7 +51,7 @@
   <body>
     <div id="root"></div>
 
-    <!-- Vite entry point (DO NOT hardcode /assets/* here) -->
+    <!-- Vite entry point -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
