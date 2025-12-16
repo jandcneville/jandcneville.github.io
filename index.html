@@ -14,11 +14,11 @@
     />
     <meta name="author" content="J & C Neville" />
 
-    <!-- Favicon / Tab Icon (make sure jc-logo-favicon.png is in /public) -->
+    <!-- Favicon / Tab Icon -->
     <link rel="icon" type="image/png" href="/jc-logo.png" />
     <link rel="shortcut icon" type="image/png" href="/jc-logo.png" />
 
-    <!-- OpenGraph (Facebook / WhatsApp Preview) -->
+    <!-- OpenGraph -->
     <meta
       property="og:title"
       content="J & C Neville • Steel & Timber Merchants"
@@ -28,18 +28,19 @@
       content="Quality steel, timber, and building materials. Located in Roscrea, Co. Tipperary."
     />
     <meta property="og:type" content="website" />
-    <!-- Optional: uses the same logo for link previews -->
-    <meta property="og:image" content="https://jandcneville.github.io/jc-logo-favicon.png" />
+    <meta
+      property="og:image"
+      content="https://jandcneville.github.io/jc-logo-favicon.png"
+    />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- Vite compiled files -->
-    <script type="module" crossorigin src="/assets/index-hDMeRZza.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-By7SwDes.css" />
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- Vite entry point (DO NOT hardcode /assets/* here) -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
